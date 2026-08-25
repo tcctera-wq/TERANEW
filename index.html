@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERA</title>
+    <!-- Favicon (Símbolo na aba do navegador) -->
+    <link rel="icon" type="image/png" href="img/claro.png">
+    <!-- Referenciando os Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR HEADER -->
+    <nav>
+        <div class="container nav-container">
+            <!-- LOGO: Ícone (Sempre Visível) + Texto/Tagline (Some no Scroll) -->
+            <a href="#" class="logo logo-container">
+                <!-- Ícone da marca -->
+                <div class="logo-icon-wrap">
+                    <img src="img/logo_icon_escuro.png" alt="Tera Logo" class="logo-dark logo-icon-img">
+                    <img src="img/logo_icon_claro.png" alt="Tera Logo" class="logo-light logo-icon-img">
+                </div>
+                <!-- Nome TERA + Tagline (Some no Scroll) -->
+                <div class="logo-text-img logo-text-block">
+                    <img src="img/logo_text_escuro.png" alt="TERA Desenvolvimento e Design" class="logo-dark logo-name-img">
+                    <img src="img/logo_text_claro.png" alt="TERA Desenvolvimento e Design" class="logo-light logo-name-img">
+                </div>
+            </a>
+            <div class="nav-meta" style="gap: 1.5rem;">
+                <div class="nav-links">
+                    <a href="#hero" data-i18n="nav_home">Início </a>
+                    <a href="#sobre" data-i18n="nav_identidade">Identidade</a>
+                    <a href="#servicos" data-i18n="nav_servicos">Serviços</a>
+                    <a href="#equipe" data-i18n="nav_time">Time</a>
+                    <a href="#contato" data-i18n="nav_contato">Contato</a>
+                </div>
+
+                <!-- Controles independentes (Estrategicamente separados com divisor suave) -->
+                <div class="nav-controls">
+
+                    <button id="langToggle" aria-label="Mudar Idioma"
+                        style="background: transparent; border: 1px solid var(--border-tech); color: var(--text-primary); border-radius: 20px; padding: 4px 14px; cursor: pointer; font-weight: 700; font-size: 0.85rem; font-family: 'Inter', sans-serif; transition: 0.3s; box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">EN</button>
+
+                    <!-- Theme Toggle Button Restored -->
+                    <button id="themeToggle" aria-label="Mudar Tema">
+                        <svg id="moonIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                        <svg id="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" style="display: block;">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    </nav>
+
+    <!-- INÍCIO (HERO) -->
+    <section id="hero">
+        <div class="mini-bubbles">
+            <div class="mini-bubble mb-1"></div>
+            <div class="mini-bubble mb-2"></div>
+            <div class="mini-bubble mb-3"></div>
+            <div class="mini-bubble mb-4"></div>
+            <div class="mini-bubble mb-5"></div>
+        </div>
+        <div class="hero-content">
+            <!-- Apenas o Titulo Limpo e a Ação Forte (SEM texto / tags) -->
+            <h1 class="fade-up-text" data-i18n="hero_title">Saia da bolha comum</h1>
+            <!-- Botão com super efeito visual de pulse neon -->
+            <a href="#sobre" class="btn btn-primary pulse-btn fade-up-btn" data-i18n="hero_btn">Inicializar
+                Infraestrutura</a>
+        </div>
+    </section>
+
+    <!-- A EMPRESA / INFRAESTRUTURA -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="sobre_sec_title">Quem nós somos</h2>
+            <div class="about-grid">
+                <!-- Imagem Oficial da Equipe (3 Membros - Foto Ajustada) -->
+                <div class="about-image-placeholder reveal" style="padding: 0; background: none;">
+                    <img src="img/equipe.jpeg" alt="Equipe Tera" class="about-photo"
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                </div>
+                <div class="about-text reveal" style="transition-delay: 0.2s;">
+                    <h2 data-i18n="sobre_title">A Excelência como Padrão</h2>
+                    <p data-i18n="sobre_text">Inspirada na origem grega de algo grandioso, a TERA nasceu para romper o
+                        comum.
+                        Enquanto muitos se mantêm seguros na bolha de padrões previsíveis, nós somos
+                        o elemento que projeta para fora, desafiando limites em um mercado saturado.
+                        Nossa missão é clara: ajudar marcas a abandonarem o convencional para atingirem
+                        um novo patamar de excelência. Mais do que resultados, entregamos a evolução
+                        necessária para quem ousa ir além. Na TERA, o sucesso é o resultado natural de
+                        quem escolhe romper barreiras todos os dias.</p>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- O QUE FAZEMOS / PROCESSOS -->
+    <section id="servicos" class="section" style="background: none; z-index: 5;">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="serv_sec_title">Nossos Serviços</h2>
+            <div class="services-grid">
+
+                <div class="service-card reveal grid-delay-1">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="serv_1_tit">Presença Digital</h3>
+                    <p data-i18n="serv_1_desc">Criamos e otimizamos sites de alta performance. Seja do zero ou
+                        revitalizando uma estrutura
+                        existente,
+                        focamos em design funcional e experiência do usuário para converter visitantes em clientes.</p>
+                </div>
+
+                <div class="service-card reveal grid-delay-2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="serv_2_tit">Infraestrutura de Rede</h3>
+                    <p data-i18n="serv_2_desc">Projetamos e gerenciamos redes estáveis e seguras. Garantimos que sua
+                        conexão e
+                        sistemas internos funcionem sem interrupções, suportando o crescimento da sua operação.</p>
+                </div>
+
+                <div class="service-card reveal grid-delay-2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                            <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                            <path d="M2 2l7.586 7.586"></path>
+                            <circle cx="11" cy="11" r="2"></circle>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="serv_3_tit">Design Estratégico</h3>
+                    <p data-i18n="serv_3_desc">Traduzimos o DNA da sua marca em elementos visuais que comunicam
+                        autoridade.
+                        Criamos logos, layouts e materiais que posicionam sua empresa acima do mercado comum.</p>
+                </div>
+
+                <div class="service-card reveal grid-delay-2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="serv_4_tit">Gestão Administrativa</h3>
+                    <p data-i18n="serv_4_desc">Cuidamos da burocracia para que você foque no crescimento. Organizamos
+                        processos internos e
+                        fluxos de trabalho administrativos, trazendo ordem e clareza para o dia a dia.</p>
+                </div>
+
+                <div class="service-card reveal grid-delay-2">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                            <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                            <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="serv_5_tit">Controle Financeiro</h3>
+                    <p data-i18n="serv_5_desc">Gerenciamos e otimizamos a saúde financeira do seu negócio. Do controle
+                        de contas à análise de
+                        viabilidade,
+                        garantimos que seus recursos sejam aplicados com máxima eficiência.</p>
+                </div>
+
+                <div class="service-card reveal grid-delay-3">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="serv_6_tit">Suporte e Performance</h3>
+                    <p data-i18n="serv_6_desc">Garantimos que sua estrutura digital nunca pare. Realizamos ajustes,
+                        correções
+                        e otimizações contínuas em sites e sistemas, assegurando que tudo funcione com máxima velocidade
+                        e segurança.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NOSSO TIME -->
+    <section id="equipe" class="section">
+        <div class="container">
+            <h2 class="section-title reveal" data-i18n="team_sec_title">Nosso time</h2>
+            <div class="team-grid">
+
+                <div class="team-member reveal grid-delay-1">
+                    <div class="member-photo">
+                        <img src="img/gustavo.jpeg" alt="Membro Tera 1">
+                    </div>
+                    <div class="member-info">
+                        <h3>Gustavo</h3>
+                        <p data-i18n="team_1_role">Gestor de Desenvolvimento</p>
+                    </div>
+                </div>
+
+                <div class="team-member reveal grid-delay-2">
+                    <div class="member-photo">
+                        <img src="img/juliana.jpeg" alt="Membro Tera 2">
+                    </div>
+                    <div class="member-info">
+                        <h3>Juliana</h3>
+                        <p data-i18n="team_2_role">Gestor ADM/Financeiro</p>
+                    </div>
+                </div>
+
+                <div class="team-member reveal grid-delay-3">
+                    <div class="member-photo">
+                        <img src="img/joao.jpeg" alt="Membro Tera 3">
+                    </div>
+                    <div class="member-info">
+                        <h3>João</h3>
+                        <p data-i18n="team_3_role">Gestor de Design</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ E CONTATO -->
+    <footer id="contato" class="new-footer">
+        <div class="container">
+            <div class="footer-grid reveal">
+
+                <!-- Coluna 1: Logo e Descrição -->
+                <div class="footer-col brand-col" style="padding-left: 1rem;">
+                    <div class="footer-logo logo-container"
+                        style="flex-direction: row; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem;">
+                        <div class="logo-icon-wrap">
+                            <img src="img/logo_icon_escuro.png" alt="Tera Logo" style="height: 58px; width: auto; display: block;">
+                        </div>
+                        <div class="logo-text-img">
+                            <img src="img/logo_text_escuro.png" alt="TERA Desenvolvimento e Design" style="height: 46px; width: auto; display: block;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Central de Atendimento -->
+                <div class="footer-col">
+                    <h4 class="footer-title" data-i18n="footer_title_atendimento">CENTRAL DE ATENDIMENTO</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:tcctera@gmail.com">tcctera@gmail.com</a></li>
+                        <li><a href="https://wa.me/5519991521825" target="_blank">(19) 99152-1825</a></li>
+                        <li><span data-i18n="footer_address">Avenida Brasil, 2000 - Parque Residencial Nardini,
+                                Americana - SP</span></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Redes Globais -->
+                <div class="footer-col">
+                    <h4 class="footer-title" data-i18n="footer_title_redes">REDES GLOBAIS</h4>
+                    <ul class="footer-links social-icons-footer" style="flex-direction: row; gap: 1rem;">
+                        <li>
+                            <a href="https://www.instagram.com/tera_desenvolvimentosdesign?igsh=N3dlcTM4cGw3dDNz"
+                                target="_blank" aria-label="Instagram" class="social-icon-footer">
+                                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom reveal">
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Referenciando os Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

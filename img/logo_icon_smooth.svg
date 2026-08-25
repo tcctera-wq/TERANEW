@@ -1,0 +1,31 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="60 60 295 275" class="logo-icon-svg">
+  <defs>
+    <style>
+      .c-ring { fill: #ffffff; transition: fill 0.4s ease; }
+      [data-theme="light"] .c-ring { fill: #0f172a; }
+      .blue-blob { fill: #0e70b6; }
+    </style>
+  </defs>
+  <!-- Outer C-Ring (Smooth Vector Path) -->
+  <path class="c-ring" d="
+    M 285 110
+    A 115 115 0 1 0 285 283
+    A 24 24 0 0 0 248 248
+    A 68 68 0 1 1 248 145
+    A 24 24 0 0 0 285 110
+    Z
+  " />
+  
+  <!-- Connected Blue Nodes (Cyan Blue Metaball) -->
+  <path class="blue-blob" d="
+    M 215 145
+    C 225 130 238 118 255 118
+    C 275 118 290 133 290 153
+    C 290 170 278 184 262 188
+    C 248 192 235 200 225 212
+    C 210 230 183 234 163 220
+    C 143 205 139 178 154 158
+    C 168 139 195 135 215 145
+    Z
+  " />
+</svg>
